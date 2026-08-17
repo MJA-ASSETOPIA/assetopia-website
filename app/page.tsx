@@ -64,6 +64,7 @@ export default function Home() {
           </a>
           <div className="nav-links">
             <a href="#services">Services</a>
+            <a href="/platforms">Platforms</a>
             <a href="#approach">Approach</a>
             <a href="#insight">Insight</a>
             <a href="/privacy">Privacy</a>
@@ -218,6 +219,7 @@ export default function Home() {
       <footer className="footer">
         <div className="footer-links">
           <span>Assetopia Inc</span>
+          <a href="/platforms">Platforms</a>
           <a href="/privacy">Privacy Policy</a>
           <a href="/terms">Terms of Service</a>
         </div>

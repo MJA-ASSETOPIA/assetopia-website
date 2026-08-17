@@ -44,6 +44,14 @@ a {
   padding: 1.25rem clamp(1rem, 4vw, 4rem) 4rem;
 }
 
+.platform-page {
+  min-height: 100vh;
+}
+
+.platform-hero {
+  padding: 1.25rem clamp(1rem, 4vw, 4rem) 4rem;
+}
+
 .nav {
   align-items: center;
   display: flex;
@@ -87,6 +95,15 @@ a {
 }
 
 .hero-grid {
+  align-items: center;
+  display: grid;
+  gap: clamp(2rem, 6vw, 5rem);
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr);
+  margin: 5.5rem auto 0;
+  max-width: 1180px;
+}
+
+.platform-hero-grid {
   align-items: center;
   display: grid;
   gap: clamp(2rem, 6vw, 5rem);
@@ -164,6 +181,7 @@ h3 {
 }
 
 .product-visual,
+.platform-visual,
 .feature,
 .insight-band,
 .content-panel,
@@ -183,7 +201,15 @@ h3 {
   position: relative;
 }
 
-.product-visual::before {
+.platform-visual {
+  min-height: 520px;
+  overflow: hidden;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  position: relative;
+}
+
+.product-visual::before,
+.platform-visual::before {
   background:
     linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.16), transparent),
     repeating-linear-gradient(
@@ -199,7 +225,8 @@ h3 {
   position: absolute;
 }
 
-.product-visual > * {
+.product-visual > *,
+.platform-visual > * {
   position: relative;
 }
 
@@ -279,6 +306,34 @@ h3 {
 .visual-list strong {
   color: var(--text-primary);
   font-size: 0.9rem;
+}
+
+.platform-stack {
+  display: grid;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.platform-stack div {
+  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 8px;
+  padding: 1.2rem;
+}
+
+.platform-stack span {
+  color: var(--accent-strong);
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 800;
+  margin-bottom: 0.55rem;
+  text-transform: uppercase;
+}
+
+.platform-stack strong {
+  display: block;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  line-height: 1.15;
 }
 
 .metric {
@@ -380,6 +435,31 @@ h3 {
   width: 2.35rem;
 }
 
+.capability-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.capability-row {
+  backdrop-filter: blur(18px);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  font-weight: 700;
+  padding: 1.15rem 1.25rem;
+}
+
+.capability-row span::before {
+  color: var(--accent-strong);
+  content: "Layer";
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  margin-right: 0.75rem;
+  text-transform: uppercase;
+}
+
 .insight-band {
   align-items: center;
   display: grid;
@@ -442,6 +522,36 @@ h3 {
   color: var(--text-secondary);
   font-size: 0.85rem;
   padding: 0.7rem 0.9rem;
+}
+
+.market-panel {
+  backdrop-filter: blur(18px);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  display: grid;
+  overflow: hidden;
+}
+
+.market-panel article {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(160px, 0.35fr) 1fr;
+  padding: 1.35rem;
+}
+
+.market-panel article + article {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.market-panel h3 {
+  margin: 0;
+}
+
+.market-panel p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
 }
 
 .cta-section {
@@ -560,6 +670,7 @@ h3 {
   }
 
   .hero-grid,
+  .platform-hero-grid,
   .feature-grid,
   .insight-band,
   .split-section,
@@ -571,7 +682,15 @@ h3 {
     margin-top: 3rem;
   }
 
+  .platform-hero-grid {
+    margin-top: 3rem;
+  }
+
   .visual-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .market-panel article {
     grid-template-columns: 1fr;
   }
 
