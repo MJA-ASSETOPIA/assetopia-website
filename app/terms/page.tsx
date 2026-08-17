@@ -17,7 +17,7 @@ const sections = [
   {
     title: "Informational Website",
     body: [
-      "The website provides company and product information. It does not create an advisory, fiduciary, broker, client, or professional relationship between you and Assetopia Inc."
+      "The website provides company, consulting, and product information. It does not create an advisory, fiduciary, broker, client, or professional relationship between you and Assetopia Inc."
     ]
   },
   {
@@ -30,7 +30,7 @@ const sections = [
   {
     title: "Product Availability",
     body: [
-      "Product descriptions, features, roadmap items, screenshots, examples, and metrics may describe current work, planned capabilities, or illustrative concepts. They do not guarantee that any feature will be available at a particular time or in a particular form."
+      "Service descriptions, product descriptions, features, roadmap items, screenshots, examples, and metrics may describe current work, planned capabilities, or illustrative concepts. They do not guarantee that any service or feature will be available at a particular time or in a particular form."
     ]
   },
   {
@@ -82,9 +82,9 @@ export default function TermsOfService() {
         <p className="eyebrow">Legal</p>
         <h1>Terms of Service</h1>
         <p>
-          Last updated: August 15, 2026. These starter terms should be reviewed
-          by qualified legal counsel before launch or before offering production
-          customer access.
+          Last updated: August 17, 2026. These starter terms should be reviewed
+          by qualified legal counsel before launch, before offering production
+          customer access, or before beginning regulated client engagements.
         </p>
       </header>
 

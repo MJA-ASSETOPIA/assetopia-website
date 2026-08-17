@@ -12,7 +12,7 @@ const sections = [
     title: "Information We Collect",
     body: [
       "The public website currently collects limited information. If you contact us by email, we may receive your name, email address, company details, and the content of your message.",
-      "If Assetopia later offers account-based product access, the platform may collect account, portfolio, holdings, broker connection, transaction, pricing, analytics, and support information needed to provide the service."
+      "If Assetopia provides consulting services or later offers account-based product access, we may collect engagement, project, account, portfolio, holdings, broker connection, transaction, pricing, analytics, and support information needed to provide those services."
     ]
   },
   {
@@ -79,9 +79,9 @@ export default function PrivacyPolicy() {
         <p className="eyebrow">Legal</p>
         <h1>Privacy Policy</h1>
         <p>
-          Last updated: August 15, 2026. This starter policy should be reviewed
-          by qualified legal counsel before launch or before collecting
-          production customer data.
+          Last updated: August 17, 2026. This starter policy should be reviewed
+          by qualified legal counsel before launch, before collecting production
+          customer data, or before beginning regulated client engagements.
         </p>
       </header>
 

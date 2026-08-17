@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Assetopia Inc | Intelligent portfolio software",
+  title: "Assetopia Inc | Financial services, data, and AI consulting",
   description:
-    "Assetopia helps investors understand portfolio risk, diversification, valuation, currencies, and opportunity with clear financial intelligence.",
+    "Assetopia Inc provides specialist financial services, data, and AI consulting while building new AI-based financial services platforms.",
   metadataBase: new URL("https://assetopiainc.com"),
   openGraph: {
     title: "Assetopia Inc",
     description:
-      "Intelligent portfolio software for investors who want clearer decisions.",
+      "Financial services, data, and AI consulting, plus new AI-based financial platforms.",
     url: "https://assetopiainc.com",
     siteName: "Assetopia Inc",
     type: "website"
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Assetopia Inc",
     description:
-      "Intelligent portfolio software for investors who want clearer decisions."
+      "Financial services, data, and AI consulting, plus new AI-based financial platforms."
   }
 };
 

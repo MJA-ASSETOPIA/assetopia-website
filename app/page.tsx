@@ -1,56 +1,56 @@
 const pillars = [
   {
-    title: "One view of the whole portfolio",
-    body: "Bring holdings, accounts, pricing, currencies, and performance context into a single, readable investment picture."
+    title: "Specialist consulting",
+    body: "Practical advisory for financial services firms, fintech builders, and investment teams working through data, analytics, AI adoption, and operating model change."
   },
   {
-    title: "Risk that is easier to explain",
-    body: "Understand concentration, region, sector, currency, and fund look-through exposure without stitching together manual spreadsheets."
+    title: "Data and intelligence infrastructure",
+    body: "Design and delivery support for cleaner financial data models, reporting layers, decision workflows, and analytics foundations that teams can actually use."
   },
   {
-    title: "Decision support, not noise",
-    body: "Surface practical insights for rebalancing, diversification, broker activity, and portfolio review conversations."
+    title: "AI-based financial platforms",
+    body: "Building focused platforms that combine financial domain expertise, governed AI workflows, portfolio intelligence, and modern product experience."
   }
 ];
 
 const metrics = [
-  { label: "Portfolio value", value: "$2.48M" },
-  { label: "Risk score", value: "72" },
-  { label: "FX impact", value: "+1.8%" }
+  { label: "Services", value: "Advisory" },
+  { label: "Data layer", value: "Trusted" },
+  { label: "Platforms", value: "AI-led" }
 ];
 
 const workflows = [
   {
     kicker: "01",
-    title: "Connect and consolidate",
-    body: "Start with imported portfolios and connected accounts, then normalize the data into a structure you can trust."
+    title: "Clarify the problem",
+    body: "Map the business objective, data reality, user workflow, governance needs, and commercial constraints before reaching for technology."
   },
   {
     kicker: "02",
-    title: "Analyze exposure",
-    body: "Review holdings through account, portfolio, security, currency, sector, region, and fund-transparency lenses."
+    title: "Design the operating layer",
+    body: "Shape the data model, analytics logic, AI interaction pattern, controls, and product experience into something teams can trust."
   },
   {
     kicker: "03",
-    title: "Act with context",
-    body: "Use explainable recommendations, price history, order visibility, and scenario thinking to guide next steps."
+    title: "Build and iterate",
+    body: "Move from strategy into prototypes, platform components, automation workflows, and launch-ready services with tight feedback loops."
   }
 ];
 
 const audiences = [
-  "Private investors managing multi-account wealth",
-  "Families who want cleaner portfolio conversations",
-  "Advisers and operators preparing investment reviews",
-  "Builders who believe financial software should feel calmer"
+  "Financial services firms modernizing analytics and client experience",
+  "Fintech founders turning domain insight into product",
+  "Investment teams improving data, reporting, and decision workflows",
+  "Private wealth, family office, and advisory teams exploring AI responsibly"
 ];
 
 const roadmap = [
-  "Portfolio import and normalized holdings",
-  "Multi-currency valuation layers",
-  "Security master and price history",
-  "Broker account connectivity",
-  "Order visibility and trading workflows",
-  "Fund look-through analytics"
+  "Financial data architecture",
+  "AI workflow design",
+  "Portfolio intelligence platforms",
+  "Analytics and reporting products",
+  "Governed automation",
+  "Specialist financial services consulting"
 ];
 
 export default function Home() {
@@ -63,8 +63,8 @@ export default function Home() {
             <span>Assetopia Inc</span>
           </a>
           <div className="nav-links">
-            <a href="#platform">Platform</a>
-            <a href="#workflow">Workflow</a>
+            <a href="#services">Services</a>
+            <a href="#approach">Approach</a>
             <a href="#insight">Insight</a>
             <a href="/privacy">Privacy</a>
             <a href="mailto:hello@assetopiainc.com">Contact</a>
@@ -73,31 +73,31 @@ export default function Home() {
 
         <div className="hero-grid" id="top">
           <div className="hero-copy">
-            <p className="eyebrow">Private portfolio intelligence</p>
+            <p className="eyebrow">Financial services, data, and AI</p>
             <h1>Assetopia Inc</h1>
             <p className="hero-text">
-              Intelligent portfolio software for investors who want a calmer,
-              clearer way to understand wealth across accounts, markets,
-              currencies, and decisions.
+              A financial services, data, and AI consulting company helping
+              clients solve complex investment and operating problems while
+              building new AI-based financial platforms.
             </p>
             <div className="hero-actions">
               <a className="button primary" href="mailto:hello@assetopiainc.com">
                 Start a conversation
               </a>
-              <a className="button secondary" href="#platform">
-                Explore the platform
+              <a className="button secondary" href="#services">
+                Explore services
               </a>
             </div>
           </div>
 
-          <div className="product-visual" aria-label="Assetopia portfolio dashboard preview">
+          <div className="product-visual" aria-label="Assetopia company capability preview">
             <div className="visual-topline">
-              <span>Portfolio Overview</span>
-              <span>Live</span>
+              <span>Assetopia Capability Map</span>
+              <span>Company</span>
             </div>
-            <div className="visual-value">$2.48M</div>
+            <div className="visual-value">AI + Finance</div>
             <div className="visual-subline">
-              Risk, exposure, pricing, and allocation in one view
+              Consulting, financial data, and product platforms in one operating model
             </div>
             <div className="allocation-bars" aria-hidden="true">
               <span style={{ width: "42%" }} />
@@ -107,16 +107,16 @@ export default function Home() {
             </div>
             <div className="visual-list">
               <div>
-                <span>Largest exposure</span>
-                <strong>US technology</strong>
+                <span>Consulting</span>
+                <strong>Strategy to delivery</strong>
               </div>
               <div>
-                <span>Review flag</span>
-                <strong>GBP/USD drift</strong>
+                <span>Data</span>
+                <strong>Financial intelligence layer</strong>
               </div>
               <div>
-                <span>Next action</span>
-                <strong>Rebalance watchlist</strong>
+                <span>Platforms</span>
+                <strong>AI-native services</strong>
               </div>
             </div>
             <div className="visual-grid">
@@ -131,10 +131,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section" id="platform">
+      <section className="section" id="services">
         <div className="section-heading">
-          <p className="eyebrow">The platform</p>
-          <h2>Built for investors who want the full picture before they make the next move.</h2>
+          <p className="eyebrow">What Assetopia does</p>
+          <h2>Specialist consulting now, with new AI-based financial platforms being built alongside it.</h2>
         </div>
         <div className="feature-grid">
           {pillars.map((feature) => (
@@ -146,13 +146,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="split-section" id="workflow">
+      <section className="split-section" id="approach">
         <div className="section-heading sticky-heading">
-          <p className="eyebrow">How it works</p>
-          <h2>From scattered portfolio data to a review-ready investment picture.</h2>
+          <p className="eyebrow">Approach</p>
+          <h2>Domain expertise first, then data architecture, AI workflows, and product delivery.</h2>
           <p>
-            Assetopia is designed around the practical jobs investors return to:
-            importing, reconciling, reviewing, comparing, and deciding what to do next.
+            Assetopia is built around the idea that financial AI only works when
+            it is grounded in real operating context, trusted data, and clear
+            human decision points.
           </p>
         </div>
         <div className="workflow-list">
@@ -171,13 +172,13 @@ export default function Home() {
       <section className="insight-band" id="insight">
         <div>
           <p className="eyebrow">Why Assetopia</p>
-          <h2>Financial data should help decisions feel calmer, not noisier.</h2>
+          <h2>Financial AI should make complex work clearer, safer, and more useful.</h2>
         </div>
         <p>
-          Assetopia is being designed around consolidated portfolio views,
-          security master data, pricing history, broker connectivity, and
-          explainable analytics. The goal is simple: fewer spreadsheets, fewer
-          blind spots, and better investment conversations.
+          The company combines specialist financial services experience with
+          modern data and AI engineering. That means helping clients improve
+          today&apos;s workflows while also creating new platforms for portfolio
+          intelligence, analytics, automation, and decision support.
         </p>
       </section>
 
@@ -185,7 +186,7 @@ export default function Home() {
         <div className="two-column">
           <article className="content-panel">
             <p className="eyebrow">Who it is for</p>
-            <h2>Serious investors, without the institutional clutter.</h2>
+            <h2>For teams turning financial expertise into better systems.</h2>
             <ul className="check-list">
               {audiences.map((audience) => (
                 <li key={audience}>{audience}</li>
@@ -193,8 +194,8 @@ export default function Home() {
             </ul>
           </article>
           <article className="content-panel">
-            <p className="eyebrow">In progress</p>
-            <h2>Core capabilities are being shaped into a focused platform.</h2>
+            <p className="eyebrow">Capability areas</p>
+            <h2>Consulting and platform work share the same foundation.</h2>
             <div className="tag-cloud">
               {roadmap.map((item) => (
                 <span key={item}>{item}</span>
@@ -207,7 +208,7 @@ export default function Home() {
       <section className="cta-section">
         <div>
           <p className="eyebrow">Assetopia Inc</p>
-          <h2>Build better investment conversations from better portfolio intelligence.</h2>
+          <h2>Bring financial services expertise, data, and AI into sharper focus.</h2>
         </div>
         <a className="button primary" href="mailto:hello@assetopiainc.com">
           Contact Assetopia
@@ -221,8 +222,8 @@ export default function Home() {
           <a href="/terms">Terms of Service</a>
         </div>
         <span>
-          Information on this site is for product and company context only and
-          is not individualized financial advice.
+          Information on this site is for company, consulting, and product
+          context only and is not individualized financial advice.
         </span>
       </footer>
     </main>
