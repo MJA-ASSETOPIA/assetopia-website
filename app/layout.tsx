@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import SiteHeader from "./components/SiteHeader";
 
 export const metadata: Metadata = {
   title: "Assetopia Inc | Financial services, data, and AI consulting",
@@ -29,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body><SiteHeader />{children}</body>
     </html>
   );
 }

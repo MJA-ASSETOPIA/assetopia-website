@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import LegalPage from "../components/LegalPage";
 
 export const metadata: Metadata = {
   title: "Terms of Service | Assetopia Inc",
@@ -71,41 +71,6 @@ const sections = [
   }
 ];
 
-export default function TermsOfService() {
-  return (
-    <main className="legal-page">
-      <header className="legal-header">
-        <Link className="brand" href="/" aria-label="Assetopia Inc home">
-          <span className="brand-mark">A</span>
-          <span>Assetopia Inc</span>
-        </Link>
-        <p className="eyebrow">Legal</p>
-        <h1>Terms of Service</h1>
-        <p>
-          Last updated: August 17, 2026. These starter terms should be reviewed
-          by qualified legal counsel before launch, before offering production
-          customer access, or before beginning regulated client engagements.
-        </p>
-      </header>
-
-      <section className="legal-content">
-        {sections.map((section) => (
-          <article key={section.title}>
-            <h2>{section.title}</h2>
-            {section.body.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
-          </article>
-        ))}
-
-        <article>
-          <h2>Contact</h2>
-          <p>
-            Questions about these terms can be sent to{" "}
-            <a href="mailto:hello@assetopiainc.com">hello@assetopiainc.com</a>.
-          </p>
-        </article>
-      </section>
-    </main>
-  );
+export default function Page() {
+  return <LegalPage title="Terms of Service" sections={sections} contactText="For questions about these terms," />;
 }

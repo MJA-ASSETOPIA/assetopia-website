@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import LegalPage from "../components/LegalPage";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Assetopia Inc",
@@ -25,7 +25,8 @@ const sections = [
   {
     title: "Cookies And Analytics",
     body: [
-      "The current website is designed as a simple informational site. If analytics, cookies, or similar technologies are added later, this policy should be updated to explain what is collected, why it is used, and how visitors can control it."
+      "The homepage embeds a TradingView market ticker. When the ticker loads, your browser connects to TradingView and its service providers, which may receive technical information such as your IP address and browser details and may use cookies or similar technologies under their own policies. The ticker can be paused and hidden using its control. It does not load automatically when your browser indicates a preference for reduced motion.",
+      "This website does not currently include a separate analytics integration. Any future analytics or additional cookie use will require an update to this policy."
     ]
   },
   {
@@ -68,41 +69,6 @@ const sections = [
   }
 ];
 
-export default function PrivacyPolicy() {
-  return (
-    <main className="legal-page">
-      <header className="legal-header">
-        <Link className="brand" href="/" aria-label="Assetopia Inc home">
-          <span className="brand-mark">A</span>
-          <span>Assetopia Inc</span>
-        </Link>
-        <p className="eyebrow">Legal</p>
-        <h1>Privacy Policy</h1>
-        <p>
-          Last updated: August 17, 2026. This starter policy should be reviewed
-          by qualified legal counsel before launch, before collecting production
-          customer data, or before beginning regulated client engagements.
-        </p>
-      </header>
-
-      <section className="legal-content">
-        {sections.map((section) => (
-          <article key={section.title}>
-            <h2>{section.title}</h2>
-            {section.body.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
-          </article>
-        ))}
-
-        <article>
-          <h2>Contact</h2>
-          <p>
-            To ask a privacy question or submit a request, contact Assetopia at{" "}
-            <a href="mailto:hello@assetopiainc.com">hello@assetopiainc.com</a>.
-          </p>
-        </article>
-      </section>
-    </main>
-  );
+export default function Page() {
+  return <LegalPage title="Privacy Policy" sections={sections} contactText="For privacy questions or information requests," updated="September 19, 2026" />;
 }
