@@ -25,7 +25,6 @@ const sections = [
   {
     title: "Cookies And Analytics",
     body: [
-      "The homepage embeds a TradingView market ticker. When the ticker loads, your browser connects to TradingView and its service providers, which may receive technical information such as your IP address and browser details and may use cookies or similar technologies under their own policies. The ticker can be paused and hidden using its control. It does not load automatically when your browser indicates a preference for reduced motion.",
       "This website does not currently include a separate analytics integration. Any future analytics or additional cookie use will require an update to this policy."
     ]
   },

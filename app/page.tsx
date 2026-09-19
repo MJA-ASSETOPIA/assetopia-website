@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { ArrowDown, ArrowUpRight } from "lucide-react";
-import MarketTicker from "./components/MarketTicker";
 import { SiteFooter } from "./components/SiteParts";
 
 export default function Home() {
@@ -48,6 +47,5 @@ export default function Home() {
         <SiteFooter />
       </section>
     </main>
-    <MarketTicker />
   </>;
 }
